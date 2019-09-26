@@ -26,27 +26,27 @@ def btn4():
     global value
     value=value + "4"
     scvalue.set(value)
-
+#method for evaluation
 def btn5():
     global value
     value=str(eval(value))
     scvalue.set(value)
-
+#method for addition
 def btn6():
     global value
     value=value+"+"
     scvalue.set(value)
-
+#method for subtraction
 def btn7():
     global value
     value=value+"-"
     scvalue.set(value)
-
+#method for multiplication
 def btn8():
     global value
     value=value+"*"
     scvalue.set(value)
-
+#method for divide
 def btn9():
     global value
     value=value+"/"
@@ -97,12 +97,12 @@ def btn18():
     global value
     value=value + ")"
     scvalue.set(value)
-
+#method for clear the screen
 def btn19():
     global value
     value=""
     scvalue.set(value)
-
+#method for backspace the digit
 def btn20():
     global value
     list1=list(value)
@@ -112,9 +112,9 @@ def btn20():
 
     
 scvalue=StringVar()
-
+#textfield
 e1=Entry(top,textvariable=scvalue).place(x="80",y="20")
-
+#buttons
 b1=Button(top,text="1",padx="8",command=btn1).place(x=50,y=50)
 b2=Button(top,text="2",padx="8",command=btn2).place(x=90,y=50)
 b3=Button(top,text="3",padx="8",command=btn3).place(x=130,y=50)
